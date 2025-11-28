@@ -3,26 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manual de Instalación Reciclapp</title>
+    <title>Guía de instalación APK Reciclapp</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="manual-container">
-        <div class="sidebar">
-            <h2>Reciclapp Docs</h2>
-            <p>Manual de Instalación v1.0</p>
+        <!-- LADO IZQUIERDO: MENÚ -->
+        <aside class="sidebar">
+            <h1 class="logo-title">Reciclapp</h1>
+            <p class="sidebar-subtitle">Guía rápida de instalación<br><span class="version">Versión de pruebas APK</span></p>
+
             <nav id="step-navigation">
                 <a href="#step-0" data-step="0" class="active">Introducción</a>
-                <a href="#step-1" data-step="1">Descarga y Acceso</a>
-                <a href="#step-2" data-step="2">Permisos de Seguridad</a>
-                <a href="#step-3" data-step="3">Instalación Final</a>
-                <a href="#step-4" data-step="4">Finalización</a>
+                <a href="#step-1" data-step="1">1. Descarga</a>
+                <a href="#step-2" data-step="2">2. Permisos</a>
+                <a href="#step-3" data-step="3">3. Instalación</a>
+                <a href="#step-4" data-step="4">4. Finalización</a>
             </nav>
-        </div>
 
-        <div class="main-content">
-            
+            <div class="sidebar-note">
+                <p><strong>TIP:</strong> si algo no coincide con tu pantalla,
+                quédate con la idea general del paso: descargar, otorgar permiso, instalar y abrir.</p>
+            </div>
+        </aside>
+
+        <!-- LADO DERECHO: CONTENIDO -->
+        <main class="main-content">
+            <!-- Barra de progreso -->
             <div class="progress-bar-container">
                 <div class="progress-text" id="progress-text">Progreso: 0%</div>
                 <div class="progress-bar">
@@ -30,69 +38,208 @@
                 </div>
             </div>
 
-            <div class="step-content active" id="step-0" data-step-index="0">
-                <h2>Bienvenido al Instalador Interactivo</h2>
-                <p>Esta guía te mostrará cómo instalar la aplicación **Reciclapp** en tu dispositivo Android. La instalación se realiza mediante un archivo APK externo, lo que requiere un ajuste de seguridad simple.</p>
-                <p>Sigue los pasos y usa los botones "Siguiente" para avanzar.</p>
-            </div>
+            <!-- PASO 0: INTRO -->
+            <section class="step-content active" id="step-0" data-step-index="0">
+                <h2>Bienvenido a la instalación de Reciclapp</h2>
+                <p>
+                    Esta guía te acompañará paso a paso para instalar el APK de
+                    <strong>Reciclapp</strong> en tu teléfono Android.
+                    Está pensada para pruebas de tu proyecto de título: no es una app publicada en Google Play, por eso se instala
+                    con un archivo <code>.apk</code>.
+                </p>
 
-            <div class="step-content" id="step-1" data-step-index="1">
-                <h2>1. Descarga y Advertencia</h2>
-                <ol>
-                    <li>Accede al enlace de SharePoint y busca el archivo **<code>app-release.apk</code>**.</li>
-                    <li>Toca **"Descargar"**. Si aparece una advertencia sobre archivos perjudiciales, toca **"Descargar de todos modos"**.</li>
-                </ol>
-                <div class="image-gallery">
-                    <img src="img/1apk.jpeg" alt="Descarga en SharePoint">
-                    <img src="img/2apk.jpeg" alt="Confirmación de Descarga">
-                    <img src="img/3apk.jpeg" alt="Notificación de Descarga Completa">
+                <p>
+                    Primero descargaremos el archivo, luego daremos un pequeño permiso de seguridad,
+                    y finalmente instalaremos la app.
+                </p>
+
+                <div class="download-block">
+                    <h3>Descarga directa del APK</h3>
+                    <a 
+                        href="https://inacapmailcl-my.sharepoint.com/:u:/g/personal/victor_carvajal16_inacapmail_cl/EVEjGduIN1pPtau4Zio3tnoB7MxGTwpwYU6wOGvpGUZFew?e=ycBreE"
+                        class="download-button"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        📥 Descargar APK Reciclapp
+                    </a>
+                    <p class="download-note">
+                        Enlace alojado en SharePoint INACAP (uso académico / demo).
+                    </p>
                 </div>
-            </div>
 
-            <div class="step-content" id="step-2" data-step-index="2">
-                <h2>2. Configuración de Seguridad</h2>
-                <p>Al intentar abrir el archivo, el sistema te alertará sobre la seguridad. Esto es normal.</p>
+                <p>
+                    Cuando ya tengas el archivo descargado, continúa con el botón
+                    <strong>“Siguiente →”</strong> de abajo.
+                </p>
+            </section>
+
+            <!-- PASO 1: DESCARGA -->
+            <section class="step-content" id="step-1" data-step-index="1">
+                <h2>1. Descarga del APK desde el enlace</h2>
                 <ol>
-                    <li>Cuando aparezca la advertencia **"Por tu seguridad, el teléfono no tiene permitido..."**, toca el botón **"Configuración"**.</li>
-                    <li>Serás llevado a la pantalla **"Instalar aplic. desconocidas"** para tu navegador (Edge).</li>
-                    <li>Activa el interruptor **"Otorgar permiso"**.</li>
+                    <li>
+                        Abre el siguiente enlace en tu navegador (puedes usar el botón verde de la introducción
+                        o este enlace de respaldo):<br>
+                        <a 
+                            href="https://inacapmailcl-my.sharepoint.com/:u:/g/personal/victor_carvajal16_inacapmail_cl/EVEjGduIN1pPtau4Zio3tnoB7MxGTwpwYU6wOGvpGUZFew?e=ycBreE"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Enlace de descarga APK Reciclapp (SharePoint INACAP)
+                        </a>
+                    </li>
+                    <li>
+                        Toca el botón de descarga en la página de SharePoint. Tu navegador
+                        mostrará una advertencia típica de <strong>“este tipo de archivo puede dañar tu dispositivo”</strong>.
+                    </li>
+                    <li>
+                        Como sabes que es tu propio APK de pruebas, acepta tocando
+                        <strong>“Descargar de todos modos”</strong>.
+                    </li>
+                    <li>
+                        Espera a que la descarga finalice. Verás una notificación en la parte superior
+                        o inferior de la pantalla.
+                    </li>
                 </ol>
-                <div class="image-gallery">
-                    <img src="img/4apk.jpeg" alt="Advertencia de Seguridad">
-                    <img src="img/5apk.jpeg" alt="Pantalla de Otorgar Permiso">
-                    <img src="img/6apk.jpeg" alt="Permiso Otorgado">
-                </div>
-            </div>
 
-            <div class="step-content" id="step-3" data-step-index="3">
-                <h2>3. Instalación de Reciclapp</h2>
-                <p>Ahora que tienes el permiso, regresa (el sistema debería hacerlo automáticamente) a la instalación.</p>
+                <div class="image-gallery">
+                    <figure>
+                        <img src="img/1apk.jpeg" alt="Pantalla de SharePoint con enlace de descarga">
+                        <figcaption>1. Pantalla de SharePoint con el botón de descarga.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/2apk.jpeg" alt="Advertencia de descarga del navegador">
+                        <figcaption>2. Advertencia de seguridad del navegador al descargar el APK.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/3apk.jpeg" alt="Descarga completada en notificación">
+                        <figcaption>3. Notificación indicando que la descarga se completó.</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- PASO 2: PERMISOS -->
+            <section class="step-content" id="step-2" data-step-index="2">
+                <h2>2. Permitir instalación desde el navegador</h2>
+                <p>
+                    Como el APK no viene desde Google Play, Android pedirá un permiso extra para instalar
+                    “aplicaciones de orígenes desconocidos”.
+                </p>
+
                 <ol>
-                    <li>Toca el botón **"Instalar"** cuando se te pregunte "¿Deseas instalar esta app?".</li>
-                    <li>Espera a que finalice el proceso.</li>
+                    <li>
+                        Toca la notificación de la descarga o busca el archivo <code>app-release.apk</code>
+                        en la barra de descargas del navegador.
+                    </li>
+                    <li>
+                        Aparecerá un mensaje del sistema indicando que no se permite instalar apps desde esa fuente.
+                        Toca <strong>“Configuración”</strong>.
+                    </li>
+                    <li>
+                        Se abrirá la pantalla de <strong>“Instalar aplicaciones desconocidas”</strong> para ese navegador
+                        (Edge, Chrome, etc.).
+                    </li>
+                    <li>
+                        Activa el interruptor de <strong>“Permitir desde esta fuente”</strong> u opción similar.
+                    </li>
                 </ol>
+
                 <div class="image-gallery">
-                    <img src="img/7apk.jpeg" alt="Ventana de Instalación">
-                    <img src="img/8apk.jpeg" alt="Proceso de Instalación">
-                    <img src="img/9apk.jpeg" alt="Instalación Completa">
+                    <figure>
+                        <img src="img/4apk.jpeg" alt="Aviso de seguridad al abrir el APK">
+                        <figcaption>4. Aviso de seguridad al intentar instalar el APK.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/5apk.jpeg" alt="Pantalla de configuración de apps desconocidas">
+                        <figcaption>5. Pantalla de “Instalar aplic. desconocidas”.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/6apk.jpeg" alt="Permiso activado para permitir instalación">
+                        <figcaption>6. Permiso activado para permitir la instalación desde el navegador.</figcaption>
+                    </figure>
                 </div>
-            </div>
+            </section>
 
-            <div class="step-content" id="step-4" data-step-index="4">
-                <h2>¡Instalación Finalizada!</h2>
-                <p>Reciclapp se ha instalado correctamente. Puedes tocar **"Abrir"** o cerrar esta ventana tocando **"Listo"**.</p>
-                <p>Recuerda: Si es necesario, desactiva el permiso de "Instalar apps desconocidas" en tu navegador para mantener la seguridad de tu dispositivo.</p>
-                <img src="img/10apk.jpeg" alt="Atajo Creado">
-                <h3>Próximo Paso: Uso de la Aplicación</h3>
-                <p>Una vez instalada, puedes continuar con la guía de uso de Reciclapp.</p>
-            </div>
+            <!-- PASO 3: INSTALACIÓN -->
+            <section class="step-content" id="step-3" data-step-index="3">
+                <h2>3. Instalación del APK de Reciclapp</h2>
+                <p>
+                    Una vez otorgado el permiso, vuelve atrás. Android retomará automáticamente
+                    la instalación del APK.
+                </p>
 
+                <ol>
+                    <li>
+                        Verás la ventana <strong>“¿Quieres instalar esta aplicación?”</strong>.
+                        Confirma tocando <strong>“Instalar”</strong>.
+                    </li>
+                    <li>
+                        Espera a que la barra de progreso termine.
+                    </li>
+                    <li>
+                        Cuando aparezca <strong>“Aplicación instalada”</strong>, la parte crítica ya está lista.
+                    </li>
+                </ol>
 
+                <div class="image-gallery">
+                    <figure>
+                        <img src="img/7apk.jpeg" alt="Pantalla de confirmación de instalación">
+                        <figcaption>7. Confirmación para instalar Reciclapp.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/8apk.jpeg" alt="Proceso de instalación en curso">
+                        <figcaption>8. Proceso de instalación en curso.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/9apk.jpeg" alt="Aplicación instalada correctamente">
+                        <figcaption>9. Mensaje indicando que la aplicación se instaló.</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- PASO 4: FINAL -->
+            <section class="step-content" id="step-4" data-step-index="4">
+                <h2>4. ¡Instalación finalizada!</h2>
+                <p>
+                    Al finalizar, tendrás dos opciones:
+                </p>
+                <ul>
+                    <li><strong>Abrir</strong>: lanza de inmediato la aplicación Reciclapp.</li>
+                    <li><strong>Listo</strong>: cierra el instalador y vuelve a tu pantalla anterior.</li>
+                </ul>
+
+                <p>
+                    Además, deberías ver el icono de <strong>Reciclapp</strong> en el listado de aplicaciones
+                    de tu teléfono. Puedes arrastrarlo a la pantalla de inicio si quieres acceso rápido.
+                </p>
+
+                <div class="image-gallery">
+                    <figure>
+                        <img src="img/10apk.jpeg" alt="Icono de Reciclapp en el dispositivo">
+                        <figcaption>10. Icono de Reciclapp disponible en el dispositivo.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/11apk.jpeg" alt="Aplicación Reciclapp abierta por primera vez">
+                        <figcaption>11. Reciclapp abierta y lista para usar en las pruebas.</figcaption>
+                    </figure>
+                </div>
+
+                <div class="final-message">
+                    <p>
+                        ¡Listo! Ya tienes instalada la app de pruebas de Reciclapp.
+                        Ahora puedes continuar con las demostraciones del proyecto:
+                        login, solicitud de retiro, vista de conductor, etc.
+                    </p>
+                </div>
+            </section>
+
+            <!-- BOTONES SIGUIENTE / ANTERIOR -->
             <div class="navigation-footer">
                 <button id="prev-btn" disabled>← Anterior</button>
                 <button id="next-btn">Siguiente →</button>
             </div>
-        </div>
+        </main>
     </div>
 
     <script src="script.js"></script>
